@@ -1,0 +1,25 @@
+<div class="container mt-4">
+  <h2>Buscar usuarios de Github</h2>
+  <div class="form-group">
+    <input
+      type="text"
+      class="form-control mb-3"
+      [(ngModel)]="searchQuery"
+      (keyup.enter)="searchUsers()"
+      placeholder="Ingresa nombre de usuario"
+    />
+    <button
+      class="btn btn-primary"
+      (click)="searchUsers()"
+      [disabled]="isLoading"
+    >
+      {{ isLoading ? "Buscando..." : "Buscar" }}
+    </button>
+  </div>
+
+  <div *ngIf="error" class="alert alert-danger mt-3">
+    {{ error }}
+  </div>
+
+  <app-user-list *ngIf="users.length > 0" [users]="users"></app-user-list>
+</div>
