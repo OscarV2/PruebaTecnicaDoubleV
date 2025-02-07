@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.prueba.doublev</groupId>
 	<artifactId>PruebaTecnicaDoubleV</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>PruebaTecnicaDoubleV</name>
 	<description>Prueba técnica para proceso de selección en Double V</description>
 	<url/>
